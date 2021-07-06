@@ -1,0 +1,146 @@
+@charset "UTF8";
+
+.contato{
+    width: 100%;
+    background: url(../Imagens/wallpaper.png) no-repeat;
+    background-size: cover;
+    margin-top: -15px;
+}
+.contato h3{
+    text-align: center;
+    font-size: 4rem;
+    margin-bottom: 100px;
+    padding-top: 30px;
+    text-decoration: underline chocolate;
+}
+
+.container-cont{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 50px;
+}
+.cont h3{
+    text-align: center;
+    margin-bottom: 20px;
+    text-decoration: underline chocolate;
+    margin-top: -40px;
+}
+
+.cont{
+    display: block;
+    width: 45%;
+  /* background-color: aqua;*/
+    margin: auto;
+}
+.info-cont{
+    display: flex;
+    align-items: center;
+    width: 60%;
+    margin: auto;
+    padding: 10px;  
+}
+.info-cont p{
+    padding-left: 10px;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+.form{
+    width: 45%;
+    /*background-color: orangered; */
+    text-align: center;
+    margin: auto;
+}
+.form p{
+    font-size: 4rem;
+    font-weight: bolder;
+    margin-bottom: 50px;
+    color: white;
+    text-decoration: underline chocolate;
+}
+.grupo-form input{
+    width: 70%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 0;
+    margin-bottom: 8px;
+}
+.grupo-form textarea{
+    width: 70%;
+    border: 0;
+    border-radius: 8px;
+    padding: 5px;
+}
+.grupo-form .botao{
+    width: 30%;
+    cursor: pointer;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+
+/* validação de campo do formulário */
+    input:invalid, textarea:invalid{
+        border: 1px solid red;
+    }
+    input:valid, textarea:valid{
+        border: 1px solid green;
+    }
+    input:focus, textarea:focus{
+        border: 1px solid rgb(15, 142, 216) !important;
+    }
+/* fim da validação de campo*/
+
+.links{
+    width: 50%;
+    margin: auto;
+    display: flex;
+    padding-top: 20px;
+}
+.links a{
+    align-content: space-around;
+    margin: auto;
+}
+
+.links:hover{
+    overflow: hidden;
+}
+.links a:hover{
+    -webkit-transform: scale(1.5);
+    transform: scale(1.1);
+    -webkit-transition: -webkit-transform 2s ease;
+    transition: transform .5s ease;
+}
+
+@media(max-width: 800px){
+    .container-cont{
+        display: block;
+    }
+    .cont{
+        width: 100%;
+    }
+    .container-cont .cont{
+        width: 100%;
+        text-align: center;
+        display: block;
+        margin: auto;
+    }
+    .container-cont .form{
+        width: 100%;
+        margin-top: 35px
+    }
+ }
+ @media(max-width: 400px){
+     .info-cont{
+         display: block;
+     }
+     .cont .links{
+         width: 100%;
+     }
+     .cont .links a{
+         margin: 10px;
+     }
+ }

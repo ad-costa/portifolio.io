@@ -1,0 +1,154 @@
+@charset "UTF-8";
+/*
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap'); */
+
+body{
+  font-size: 1.6rem;
+  padding-top: 55px;
+}
+html, body{
+    height: 100vw;
+}
+.inicio{
+    background: url(../Imagens/wallpaper-inicio.jpg) no-repeat;
+   /* background-size: 100% 100%;*/
+    background-size: cover;
+    padding-bottom: 150px;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+body {
+    display: block;
+    margin: 8px;
+    padding-top: 75px;
+}
+html {
+    font-size: 62.5%;
+}
+
+
+/* bem vindo*/
+section{
+    display: block;
+}
+section.bem-vindo .container{
+    width: 60vw;
+    /* max-width: 980px; */ 
+    margin: auto;
+    background-color:  rgb(136, 148, 29);
+    border-radius: 20px;
+}
+section.bem-vindo .container p{
+    font-weight: bold;
+    color: #fff;
+   /* margin: auto; */
+    font-size: 4.5rem;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+section.bem-vindo .veja{
+    background-color: indianred;
+    width: 62vw;
+}
+.veja{
+    margin: 100px auto;
+    border-radius: 20px;
+}
+.veja p{
+    color: rgb(255, 255, 255);
+    font-size: 5rem;
+    text-align: center;
+    font-size: bold;
+}
+
+/*h2{
+    text-align: center;
+    display: block;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-size: 4rem;
+    line-height: 4.0rem;
+} */
+
+/* serviços */ 
+.container-servicos{
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: -80px;
+}
+.servicos{
+    text-align: center;
+} 
+/*
+.titulo{
+    background-color: indianred;
+    width: 20%;
+    margin:50px auto;
+    border-radius: 20px;
+    line-height: 5.5rem;
+} 
+.titulo h1{
+    text-align: center;
+    font-size: 5rem;
+    color: rgb(0, 0, 0);
+    margin-block-start: 0.83em;
+    margin-block-end: 0.85em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-size: 4rem;
+    margin-top: 100px;
+}*/
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+    justify-content: space-between;
+}
+.container-sections{
+    position: relative;
+    margin: auto;
+    width: 88%;
+    top: 70px !important;
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fit, mimax(250px, 1fr));
+    grid-gap: 20px;
+}
+.icone{
+    width: 80%;
+    border: 0px solid;
+}
+.img{
+    vertical-align: middle;
+    border-style: none;
+}
+.servicos span{
+    position: relative;
+    top: 15px;
+    line-height: 30px;
+}
+strong{
+    font-weight: bolder;
+}
+.titulo-servico{
+    font-size: 2.5rem;
+    display: block;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px rgba(19, 15, 15, 0.419);
+    background-color: rgb(136, 148, 29);
+    margin: auto;
+    text-align: center;
+    border-radius: 10px;
+}

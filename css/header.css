@@ -1,0 +1,133 @@
+ul{
+    list-style: none;
+}
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgb(149 55 53);
+    z-index: 10; 
+}
+.container-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.open-nav{
+    display: none;
+}
+
+nav{
+    width: 100%;
+    max-width: 700px;
+}
+nav .list-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav .list-menu a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 4px;
+    
+}
+nav .list-menu a:hover{
+    color: teal;
+} 
+/* linha em baixo dos links */
+nav .list-menu a::before{ 
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    background: teal;
+    transition: all .8s ease;
+}
+nav .list-menu a:hover::before{
+    width: 100%; /* fazendo a linha aparecer embaixo dos links */
+    transition: all .8s ease;
+}
+
+
+@media(max-width: 425px){
+    nav{
+        position: fixed;
+        top: 0;
+        left: 100%;
+        width: 100%;
+        height: 100%; 
+        background: rgb(131, 30, 30);
+    }
+    nav .list-menu{
+        flex-direction: column;
+        margin: 0;
+        padding: 50px 0 0 0;
+    }
+    nav .list-menu a{
+        display: block;
+        margin-bottom: 25px;
+        padding: 20px;
+    }
+    .open-nav{
+        position: relative;
+        display: block;
+        width: 40px;
+        height: 30px;
+        z-index: 1000; 
+
+        background: none;
+        border: none;
+    }
+    .open-nav .line{
+        position: absolute;
+        width: 100%;
+        height: 4px;
+        background: #ffffff;
+        left: 0;
+        border-radius: 5px;
+    }
+    .open-nav .line.line_1{
+        top: 0;
+    }
+    .open-nav .line.line_2{
+        top: 50%;
+        transform: translateY(-50%);
+        opacity: 1;
+    }
+    .open-nav .line.line_3{
+        bottom: 0;
+    }
+
+
+    button.open-nav.open .line.line_1{
+       /* transform: rotate(35deg);
+        transform-origin: left; */
+        transform: rotate(45deg) translate(9px, 9px);
+    }
+    button.open-nav.open .line.line_2{
+        left: 100%;
+        opacity: 0;
+    }
+    button.open-nav.open .line.line_3{
+      /*  transform: rotate(-35deg);
+        transform-origin: left;*/
+        transform: rotate(-45deg) translate(10px, -9px);
+    }
+    nav.menu.active{
+        left: 0;
+    }
+}

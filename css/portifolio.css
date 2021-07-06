@@ -1,0 +1,74 @@
+@charset "UTF8";
+.portifolio{
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -45px;
+    background: url(../Imagens/wallpaper-portifolio.jpg) no-repeat;
+   /* background-size: 100% 100%;*/
+    background-size: cover;
+}
+.titulo-class{
+    text-align: center !important;
+    font-size: 4.5rem;
+    margin-top: 50px;
+    text-decoration: underline chocolate;
+}
+
+.trabalho{
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+    width: 100%;
+    margin: auto;
+}
+.trabalho h2{
+    text-align: center;
+    font-size: 4rem;
+    margin: auto;
+    margin-top: 50px;
+   /* margin-bottom: 50px; */
+   text-decoration: underline chocolate;
+}
+.projetos{
+    display: flex;
+   /* width: 80%;*/
+    flex-wrap: wrap;
+    justify-content: space-around !important;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 20px;
+    padding-bottom: 50px;
+}
+
+.projetos:hover{
+    overflow: hidden;
+}
+
+.item:hover{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.item{
+    margin-top: 50px;
+    background-color: #fff;
+    border-radius: 20px;
+
+    -webkit-transition: -webkit-transform .5s ease;
+    transition: transform .5s ease;
+}
+.titulo-item{
+    text-align: center;
+    margin-top: 8px; 
+}
+.titulo-item h4{
+    font-size: 2rem;
+}
+.titulo-item p{
+    font-size: 2rem;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
